@@ -9,7 +9,9 @@ export default class Board extends Component {
 
 
   cellClicked(e) {
-    console.log(e.target);
+    // color = current player meaning i need to bring it from the reducer
+    //this means that I need to dispatch the action here as well?
+    e.target.style.backgroundColor = 'red';
   }
 
   renderBtns() {
@@ -24,8 +26,9 @@ export default class Board extends Component {
   render() {
 
     return (
-      <div>
+      <div className='cellContainer'>
         {this.renderBtns()}
+        <button className='btn btn-danger'>Reset</button>
       </div>
     )
   }

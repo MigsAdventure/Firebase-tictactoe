@@ -4,9 +4,15 @@ body {
 
 .cell {
   display: inline-block;
-  width: 30%;
-  height:15em;
+  width: 10em;
+  height:10em;
   margin:1em;
   text-align: center;
   background: skyblue;
+}
+
+.cellContainer {
+  width: 40em;
+  margin: auto;
+  text-align: center;
 }
