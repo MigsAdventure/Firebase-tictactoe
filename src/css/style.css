@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+
+.cell {
+  display: inline-block;
+  width: 30%;
+  height:15em;
+  margin:1em;
+  text-align: center;
+  background: skyblue;
+}
