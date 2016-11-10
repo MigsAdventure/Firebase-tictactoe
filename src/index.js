@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider }  from 'react-redux';
 import Layout from './components/Layout';
-import { startListeningToPlayer } from './actions/FirebaseActions';
+import { startListeningToPlayer, startListeningToBoard } from './actions/FirebaseActions';
 
 
 import store from './store';
@@ -14,4 +14,5 @@ render(
   document.getElementById('root')
 );
 
+store.dispatch(startListeningToBoard());
 store.dispatch(startListeningToPlayer());

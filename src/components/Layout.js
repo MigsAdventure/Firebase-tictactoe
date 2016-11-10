@@ -4,7 +4,7 @@ import Board from './Board';
 import { addIcon } from '../actions/FirebaseActions';
 
 @connect(state => ({
-  BoardState: state.messages,
+  BoardState: state.board,
 }), dispatch => ({
   addNewIcon(icon) {
     dispatch(addIcon(icon));
